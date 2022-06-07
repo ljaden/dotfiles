@@ -1,1 +1,1 @@
-# i3-gap configs
+# i3/Sway Config
