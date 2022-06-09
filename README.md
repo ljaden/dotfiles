@@ -1,1 +1,1 @@
-# i3/Sway Config
+# dotfiles

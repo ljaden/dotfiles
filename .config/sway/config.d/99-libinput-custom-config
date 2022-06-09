@@ -1,4 +1,0 @@
-input "5426:148:Razer_Orochi_V2" {
-    accel_profile "flat"
-    pointer_accel 0
-}

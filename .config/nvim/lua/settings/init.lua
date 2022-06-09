@@ -17,7 +17,7 @@ set.rnu=true
 set.scrolloff=10
 
 set.signcolumn='yes'
-set.wrap=false
+set.wrap=true
 set.fileencoding='utf-8'
 set.termguicolors=true
 
@@ -26,7 +26,3 @@ set.hidden=true
 -- Color scheme
 set.background = 'dark' -- [light]
 vim.cmd([[colorscheme gruvbox]])
-
--- Collapse with Treesitter
-set.foldmethod='expr'
-set.foldexpr='nvim_treesitter#foldexpr()'
