@@ -1,0 +1,60 @@
+[theme]
+name = "gruvbox-dark"
+# name = "plain"
+# [theme.overrides]
+# separator = "|"
+
+[icons]
+name = "awesome6"
+
+[[block]]
+block = "time"
+interval = 1
+format = "%a %m/%d %R %P"
+
+[[block]]
+block = "cpu"
+format = "{utilization}"
+[block.icons_overrides]
+cpu = "\uf2db"
+
+[[block]]
+block = "memory"
+format_mem = "{mem_used_percents}"
+clickable = false
+[block.icons_overrides]
+memory_mem = "\uf538"
+
+[[block]]
+block = "temperature"
+collapsed = false
+interval = 10
+format = "{average}"
+
+[[block]]
+block = "sound"
+driver = "auto"
+
+[[block]]
+block = "external_ip"
+format = "\uf1eb {ip} {region_code}"
+
+# [[block]]
+# block = "custom"
+# command = "echo \uf011" # assumes fontawesome icons
+# interval = "once"
+# on_click = "systemctl `echo -e 'suspend\npoweroff\nreboot' | dmenu`"
+
+[[block]]
+block = "nvidia_gpu"
+label = "\uf835"
+interval = 1
+[block.icons_overrides]
+gpu = ""
+
+# [[block]]
+# block = "speedtest"
+# interval = 900
+# format = "{ping}{speed_down}"
+# [block.icons_overrides]
+# ping = ""
